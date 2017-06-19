@@ -16,10 +16,11 @@ if (process.env.JAWSDB_URL) {
 
 } else {
   connection = mysql.createConnection({
+    root:3306,
     host:'localhost',
     user:'root',
-    password:'hacktheplanet',
-    database:'todoagain_db'
+    password:'',
+    database:'burgers_db'
   });
 };
 
